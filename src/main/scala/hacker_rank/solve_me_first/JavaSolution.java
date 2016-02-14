@@ -1,7 +1,6 @@
 package hacker_rank.solve_me_first;
 
 import java.io.*;
-import java.util.ArrayList;
 
 public class JavaSolution {
 

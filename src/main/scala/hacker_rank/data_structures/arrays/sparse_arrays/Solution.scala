@@ -1,7 +1,5 @@
 package hacker_rank.data_structures.arrays.sparse_arrays
 
-// https://www.hackerrank.com/challenges/array-and-simple-queries
-
 object Solution {
 
   val input = io.Source.stdin.getLines()
@@ -11,10 +9,9 @@ object Solution {
   def main(args: Array[String]) {
     val N = readInt
     val stringsCount = collection.mutable.Map.empty[String, Int]
-    val strings = for (_ <- 0 until N) yield {
+    for (_ <- 0 until N) yield {
       val s = readString
       stringsCount(s) = stringsCount.getOrElse(s, 0) + 1
-      s
     }
 
     val Q = readInt
